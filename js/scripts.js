@@ -14,10 +14,6 @@ function newItem() {
   }
 
 //2. Crossing out an item from the list of items:
-  // function crossOut() {
-  //   li.toggleClass('strike');
-  // }
-
   li.on('dblclick', function crossOut() {
     li.toggleClass('strike');
   });
@@ -30,11 +26,6 @@ function newItem() {
   crossOutButton.on('click', function deleteListItem() {
     li.addClass('delete');
   });
-
-//3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css:
-  // function deleteListItem() {
-  //   li.addClass('delete');
-  // }
 
 // 4. Reordering the items:
   $('#list').sortable();
